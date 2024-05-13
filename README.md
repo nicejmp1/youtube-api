@@ -59,6 +59,18 @@ npm start
 ## 자동완성 명령어 
 - rafc (처음자동으로 만들어 주는것)
 
+````bash
+import React from 'react'
+
+const Home = () => {
+    return (
+        <div>Home</div>
+    )
+}
+
+export default Home
+````
+
 ## home 화면 만드는 방법
 
 ````bash
