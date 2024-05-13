@@ -135,3 +135,5 @@ const App = () => {
 export default App
 
 ````
+
+이런식으로 route pathfmf 이용해 해당 경로 안에 페이지를 만들어 놔야 함.
