@@ -58,7 +58,7 @@ npm start
 
 ## 자동완성 명령어 
 - rafc (처음자동으로 만들어 주는것)
-
+- rafce
 ````bash
 import React from 'react'
 
