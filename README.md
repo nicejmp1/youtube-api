@@ -1,71 +1,41 @@
-# Getting Started with Create React App
+# YouTube Playlist Manager
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 프로젝트 소개
+이 프로젝트는 YouTube API를 사용하여 사용자가 좋아하는 음악 플레이리스트를 관리할 수 있는 웹 애플리케이션입니다. 사용자는 YouTube에서 음악을 검색, 저장, 재생할 수 있습니다.
 
-## Available Scripts
+## 시작하기 전에
+본 프로젝트는 Node.js 기반으로 작성되었으며, React와 여러 필수 라이브러리를 사용합니다.
 
-In the project directory, you can run:
+### 필수 조건
+- Node.js가 설치되어 있어야 합니다. [Node.js 공식 웹사이트](https://nodejs.org/)에서 다운로드할 수 있습니다.
+- 터미널에서 `node -v`를 실행하여 Node.js가 성공적으로 설치되었는지 확인하세요.
+- 필요하지 않은 파일이나 이전 프로젝트 파일이 있다면 정리합니다.
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 설치 방법
+1. **프로젝트 클론하기**
+````bash
+git clone https://github.com/your-username/youtube-api.git
+cd youtube-api
+````
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. 필요한 라이브러리 설치
+프로젝트를 시작하기 전에 다음 라이브러리들을 설치해야 합니다:
+- **React 설치**: `npx create-react-app 폴더이름` 명령어로 새로운 리액트 앱을 생성합니다. 현재 디렉토리에 설치하려면 폴더 이름 대신 `.`를 사용하세요.
+- **react-router-dom 설치**: `npm install react-router-dom` 명령어로 SPA(Single Page Application) 내 라우팅을 관리할 수 있는 라이브러리를 설치합니다.
+- **Axios 설치**: `npm install axios` 명령어로 비동기 통신을 위한 API 라이브러리를 설치합니다.
+- **React Icons 설치**: `npm install react-icons` 명령어로 다양한 아이콘을 프로젝트에 추가할 수 있습니다.
+- **React Player 설치**: `npm install react-player` 명령어로 유튜브 및 다른 비디오 스트리밍 서비스를 재생할 수 있는 컴포넌트를 설치합니다.
+- **Sass 설치**: `npm install sass` 명령어로 CSS 전처리기를 설치합니다.
+- **React Helmet Async 설치**: `npm install react-helmet-async` 명령어로 SEO를 개선할 수 있는 도구를 설치합니다.
+- **Swiper 설치**: `npm install swiper` 명령어로 슬라이드 기능을 추가할 수 있는 라이브러리를 설치합니다.
 
-### `npm test`
+## 사용 스택
+- node.js 설치
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# youtube-api
+## 프로젝트 실행 npm 명령어 
+프로젝트를 실행하기 위한 명령어는 다음과 같습니다:
+- **npm start**: 개발 서버를 시작하고 `http://localhost:3000`에서 애플리케이션을 볼 수 있습니다.
+- **npm run build**: 애플리케이션을 프로덕션 준비 상태로 빌드합니다.
+- **npm test**: 애플리케이션의 테스트를 실행합니다.
+- **npm run eject**: Create-React-App에서 제공하는 빌드 도구와 설정을 사용자가 직접 관리할 수 있도록 추출합니다. 이 작업은 되돌릴 수 없습니다.
