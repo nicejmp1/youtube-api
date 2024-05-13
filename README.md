@@ -39,3 +39,10 @@ cd youtube-api
 - **npm run build**: 애플리케이션을 프로덕션 준비 상태로 빌드합니다.
 - **npm test**: 애플리케이션의 테스트를 실행합니다.
 - **npm run eject**: Create-React-App에서 제공하는 빌드 도구와 설정을 사용자가 직접 관리할 수 있도록 추출합니다. 이 작업은 되돌릴 수 없습니다.
+
+- **시작하기** : 
+````bash
+cd /Users/nicejmp/Documents/GitHub/youtube-api
+npm start
+````
+이 문서는 프로젝트의 필요한 라이브러리 설치부터 실행까지의 단계를 명확하게 안내합니다. 필요에 따라 프로젝트 특성에 맞게 추가적인 수정을 진행하실 수 있습니다.
