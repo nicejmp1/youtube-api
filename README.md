@@ -59,6 +59,9 @@ npm start
 ## 자동완성 명령어 
 - rafc (처음자동으로 만들어 주는것)
 - rafce
+- components (폴더)
+
+
 ````bash
 import React from 'react'
 
@@ -150,3 +153,53 @@ npm run build란?
 - 트랜스파일링: 최신 자바스크립트(ECMAScript 6 이상) 코드를 모든 브라우저에서 호환 가능한 형태로 변환합니다. <br>
 - 환경 설정: 프로덕션 환경에 맞게 환경 변수 설정을 조정합니다 <br>
 
+## 처음 리엑트 설정 시 필요한 폴더와 파일 (2024.05.13)
+![alt text](image.png)
+
+````bash
+import React from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+
+import Home from './pages/Home'
+import Today from './pages/Today'
+import Developoer from './pages/Developoer'
+import Webd from './pages/Webd'
+import Website from './pages/Website'
+import Gsap from './pages/Gsap'
+import Port from './pages/Port'
+import Youtube from './pages/Youtube'
+import Channel from './pages/Channel'
+import Video from './pages/Video'
+import Search from './pages/Search'
+import Not from './pages/Not'
+
+import Header from './components/section/Header'
+import Footer from './components/section/Footer'
+
+
+const App = () => {
+  return (
+    <BrowserRouter>
+      <Header />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/today' element={<Today />} />
+        <Route path='/developoer' element={<Developoer />} />
+        <Route path='/webd' element={<Webd />} />
+        <Route path='/website' element={<Website />} />
+        <Route path='/gsap' element={<Gsap />} />
+        <Route path='/port' element={<Port />} />
+        <Route path='/youtube' element={<Youtube />} />
+        <Route path='/channel' element={<Channel />} />
+        <Route path='/video' element={<Video />} />
+        <Route path='/search' element={<Search />} />
+        <Route path='/*' element={<Not />} />
+      </Routes>
+      <Footer />
+    </BrowserRouter>
+  )
+}
+
+export default App
+
+````
