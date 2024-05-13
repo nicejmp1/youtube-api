@@ -23,12 +23,19 @@ cd youtube-api
 > 프로젝트를 시작하기 전에 다음 라이브러리들을 설치해야 합니다.
 
 - **React 설치**: `npx create-react-app 폴더이름` 명령어로 새로운 리액트 앱을 생성합니다. 현재 디렉토리에 설치하려면 폴더 이름 대신 `.`를 사용하세요.
+
 - **react-router-dom 설치**: `npm install react-router-dom` 명령어로 SPA(Single Page Application) 내 라우팅을 관리할 수 있는 라이브러리를 설치합니다.
+
 - **Axios 설치**: `npm install axios` 명령어로 비동기 통신을 위한 API 라이브러리를 설치합니다.
+
 - **React Icons 설치**: `npm install react-icons` 명령어로 다양한 아이콘을 프로젝트에 추가할 수 있습니다.
+
 - **React Player 설치**: `npm install react-player` 명령어로 유튜브 및 다른 비디오 스트리밍 서비스를 재생할 수 있는 컴포넌트를 설치합니다.
+
 - **Sass 설치**: `npm install sass` 명령어로 CSS 전처리기를 설치합니다.
+
 - **React Helmet Async 설치**: `npm install react-helmet-async` 명령어로 SEO를 개선할 수 있는 도구를 설치합니다.
+
 - **Swiper 설치**: `npm install swiper` 명령어로 슬라이드 기능을 추가할 수 있는 라이브러리를 설치합니다.
 
 ## 사용 스택
@@ -47,3 +54,29 @@ cd /Users/nicejmp/Documents/GitHub/youtube-api
 npm start
 ````
 이 문서는 프로젝트의 필요한 라이브러리 설치부터 실행까지의 단계를 명확하게 안내합니다. 필요에 따라 프로젝트 특성에 맞게 추가적인 수정을 진행하실 수 있습니다.
+
+
+## 자동완성 명령어 
+- rafc (처음자동으로 만들어 주는것)
+
+## home 화면 만드는 방법
+
+````bash
+import React from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+
+import Home from './pages/Home';
+
+const App = () => {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Home />} />
+      </Routes>
+    </BrowserRouter>
+  )
+}
+
+export default App
+
+````
