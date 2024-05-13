@@ -19,7 +19,7 @@ git clone https://github.com/your-username/youtube-api.git
 cd youtube-api
 ````
 
-2. 필요한 라이브러리 설치
+2. **필요한 라이브러리 설치**
 프로젝트를 시작하기 전에 다음 라이브러리들을 설치해야 합니다:
 - **React 설치**: `npx create-react-app 폴더이름` 명령어로 새로운 리액트 앱을 생성합니다. 현재 디렉토리에 설치하려면 폴더 이름 대신 `.`를 사용하세요.
 - **react-router-dom 설치**: `npm install react-router-dom` 명령어로 SPA(Single Page Application) 내 라우팅을 관리할 수 있는 라이브러리를 설치합니다.
