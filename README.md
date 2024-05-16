@@ -203,3 +203,27 @@ const App = () => {
 export default App
 
 ````
+
+## props
+>React에서 props는 컴포넌트 간의 데이터 통신과 인터페이스 설정에 필수적인 요소입니다. props를 통해 부모 컴포넌트는 자식 컴포넌트에게 상태, 설정, 그리고 행동(함수)을 전달할 수 있습니다. 이러한 특성은 React의 선언적인 프로그래밍 패러다임을 강화하고, 컴포넌트 기반 개발을 더욱 유연하게 만듭니다.
+
+````bash
+import React from 'react'
+
+const Main = (props) => {
+    return (
+        <main id='main' role='main'>
+            {props.children}
+        </main>
+    )
+}
+
+export default Main
+````
+
+props를 이용하여 main 하위 폴더들 = 자식 컴포넌트를 불러 올 수 있다.
+
+
+## 리액트에서 링크 사용시
+- 내부에서 이동할때는 Link .to 사용
+- 외부로 이동할때는 a 링크만 사용 해도 가능
