@@ -18,7 +18,6 @@ import Header from './components/section/Header'
 import Footer from './components/section/Footer'
 import Main from './components/section/Main'
 
-
 const App = () => {
   return (
     <BrowserRouter>
